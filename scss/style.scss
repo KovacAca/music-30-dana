@@ -77,6 +77,9 @@ a {
 h2 {
     font-size: 3rem;
     line-height: 1.1;
+    @media(max-width: 767px) {
+        font-size: 2rem;
+    }
 }
 h3 {
     font-size: 1.7rem;
@@ -89,6 +92,10 @@ nav {
     background-color: $navPlava;
     @include flex(space-between, center, row);
     padding: 30px 60px;
+    @media(max-width: 767px) {
+        @include flex(center, center, column);
+        padding: 20px;
+    }
     & > a {
          @extend .logo;
     }
@@ -96,6 +103,10 @@ nav {
         @include flex(space-between, center, row);
         li {
             margin-left: 50px;
+            @media(max-width: 767px) {
+                margin: 10px;
+            }
+            
         }
     }
 }
@@ -124,8 +135,15 @@ Header
     color: $bela;
     padding: 0 60px;
     @include flex(space-between, center, row);
+    @media(max-width: 767px) {
+        padding: 20px;
+    }
     div {
         flex: 0 0 45%;
+        @media(max-width: 767px) {
+            flex: 0 0 100%;
+            text-align: center;
+        }
         img {
             width: 100%;
             padding: 40px 0;
@@ -134,6 +152,9 @@ Header
             font-size: 4rem;
             span {
                 color: $pink;
+            }
+            @media(max-width: 767px) {
+                font-size: 2rem;
             }
         }
         button {
@@ -146,9 +167,17 @@ Unlimited
 *****************/
 .unlimited {
     padding: $padding;
-    @include flex(space-between, center , row );
+    @include flex(space-between, center , row);
+    @media(max-width: 767px) {
+        padding: 10px;
+    }
     article {
         flex: 0 0 48%;
+        @media(max-width: 767px) {
+            flex: 0 0 100%;
+            text-align: center;
+            padding: 10px;
+        }
         button {
             @include btn;
         }
@@ -161,10 +190,16 @@ hivHeader
     padding: $padding;
     background: $tamnoPlava;
     color: $bela;
+    @media(max-width: 767px) {
+        text-align: center;
+    }
     article {
         @include flex(space-between, center, row);
         div {
             flex: 0 0 30%;
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+            }
             i {
                 color: $pink;
                 font-size: 4rem;
@@ -178,22 +213,38 @@ artist
 *****************/
 .artists {
     padding: $padding;
+    @media(max-width: 767px) {
+        padding: 15px;
+    }
     article:first-child {
-        @include flex(space-between, flex-start, row);
-        padding-bottom: 35px;
-        h2 {
-            flex: 0 0 48%;
-        }
-        p {
-            flex: 0 0 48%;
+    @include flex(space-between, flex-start, row);
+    padding-bottom: 35px;
+    @media(max-width: 767px) {
+        padding-bottom: 5px;
+        text-align: center;
+    }
+    h2 {
+        flex: 0 0 48%;
+        @media(max-width: 767px) {
+            flex: 0 0 100%;
         }
     }
+    p {
+        flex: 0 0 48%;
+        @media(max-width: 767px) {
+            flex: 0 0 100%;
+        }
+    }
+}
     article:last-child {
         @include flex(space-between, center, row);
         margin-top: 50px;
         div {
             flex: 0 0 22%;
             text-align: center;
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+            }
             img {
                 width: 100%;
                 border-radius: 40px;
@@ -212,6 +263,9 @@ subscription
         @include flex(space-between, center, row); 
         div:first-child {
             flex: 0 0 48%;
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+            }
             h4 {
                 color: $pink;
                 font-size: 1.8rem;
@@ -227,6 +281,10 @@ subscription
             border-radius: 30px;
             padding: 30px;
             @include flex(center, center , row);
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+                margin-top: 30px;
+            }
             ul {
                 line-height: 3;
                 li::before {
@@ -248,10 +306,18 @@ concept
     article:last-child {
         div {
             flex: 0 0 15%;
+            @media(max-width: 767px) {
+                flex: 0 0 100%;
+                margin-bottom: 40px;
+            }
             img {
                 border-radius: 50%;
+                @media(max-width: 767px) {
+                    width: 80%;
+                }
             }
         }
     }
 }
+
 
