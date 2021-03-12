@@ -202,12 +202,50 @@ artist
     }
 }
 /**********************
+subscription
+*****************/
+.subscription {
+    background: $tamnoPlava;
+    color: $bela;
+    padding: $padding;
+    .container {
+        @include flex(space-between, center, row); 
+        div:first-child {
+            flex: 0 0 48%;
+            h4 {
+                color: $pink;
+                font-size: 1.8rem;
+                padding: 15px 0;
+            }
+            button {
+                @include btn;
+            }
+        }
+        div:last-child {
+            flex: 0 0 48%;
+            background-color: rgba($bela, .1);
+            border-radius: 30px;
+            padding: 30px;
+            @include flex(center, center , row);
+            ul {
+                line-height: 3;
+                li::before {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f058";
+                    margin-right: 10px;
+                    color: $pink;
+                    }
+                }
+            }
+            
+        } 
+    }
+/**********************
 concept
 *****************/
 .concept {
     @extend .artists;
     article:last-child {
-        @include flex(space-between, center, row);
         div {
             flex: 0 0 15%;
             img {
@@ -216,3 +254,4 @@ concept
         }
     }
 }
+
