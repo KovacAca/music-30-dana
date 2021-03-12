@@ -1,6 +1,27 @@
 <?php include "partials/header.php"; ?>
 
-    <h1 style='font-size: 9rem; text-align: center;'>Home</h1>
+    <!-- Header -->
+    <header class="mainHeader">
+        <div>
+            <h1><span>Music</span> for everyone</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsam fugit vel nostrum officia voluptates laudantium possimus iste ex, excepturi sit quod quos beatae. Quaerat earum illo aspernatur cumque consequatur?</p>
+            <button>Start free trial</button>
+        </div>
+        <div>
+            <img src="img/header.png" alt="">
+        </div>
+    </header>
+
+    <!-- Unlimited -->
+    <section class="unlimited container">
+        <article>
+            <h2>Unlimited Access to 100K tracks</h2>
+        </article>
+        <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam officiis libero enim omnis maiores accusamus possimus officia placeat non dicta fugit ipsum impedit accusantium vitae, iste excepturi quibusdam, ipsa dignissimos ab. Odio atque amet velit architecto culpa omnis quaerat vitae reprehenderit, eligendi quia voluptatibus, aspernatur consequuntur ratione quisquam quas voluptatum ipsam fuga doloremque quasi pariatur fugiat possimus cumque! Consectetur, tenetur.</p>
+            <button>Try it now</button>
+        </article>
+    </section>
 
 <?php include "partials/footer.php"; ?>
 
